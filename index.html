@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alain Marley photography portfolio" />
+  <title>Alain Marley | Photography</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home">ALAIN MARLEY</a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">PHOTOGRAPHER • FILMMAKER</p>
+        <h1>Stories told<br>one frame at a time.</h1>
+        <p class="hero-copy">Portraits, street moments, cinematic scenes, and the details people usually miss.</p>
+        <a class="button" href="#work">View my work</a>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow dark">SELECTED WORK</p>
+        <h2>My pictures</h2>
+        <p>Click any photo to see it larger.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="group" aria-label="Filter photographs">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="portrait">Portraits</button>
+        <button class="filter" data-filter="street">Street</button>
+        <button class="filter" data-filter="cinematic">Cinematic</button>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery-item portrait reveal" tabindex="0" data-title="Quiet Confidence">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=1400&q=85" alt="Portrait of a man outdoors" loading="lazy">
+          <figcaption><span>Quiet Confidence</span><small>Portrait</small></figcaption>
+        </figure>
+        <figure class="gallery-item street reveal" tabindex="0" data-title="After Rain">
+          <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1400&q=85" alt="City street seen from above" loading="lazy">
+          <figcaption><span>After Rain</span><small>Street</small></figcaption>
+        </figure>
+        <figure class="gallery-item cinematic reveal" tabindex="0" data-title="Midnight Hallway">
+          <img src="https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=85" alt="Dark cinematic night scene" loading="lazy">
+          <figcaption><span>Midnight Hallway</span><small>Cinematic</small></figcaption>
+        </figure>
+        <figure class="gallery-item portrait reveal" tabindex="0" data-title="Golden Hour">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=1400&q=85" alt="Portrait of a woman in natural light" loading="lazy">
+          <figcaption><span>Golden Hour</span><small>Portrait</small></figcaption>
+        </figure>
+        <figure class="gallery-item street reveal" tabindex="0" data-title="City Lines">
+          <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1400&q=85" alt="Downtown city skyline" loading="lazy">
+          <figcaption><span>City Lines</span><small>Street</small></figcaption>
+        </figure>
+        <figure class="gallery-item cinematic reveal" tabindex="0" data-title="The Unknown">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=85" alt="Person standing in a cinematic landscape" loading="lazy">
+          <figcaption><span>The Unknown</span><small>Cinematic</small></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-photo reveal">
+        <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&w=1200&q=85" alt="Photographer portrait placeholder" loading="lazy">
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow dark">ABOUT ME</p>
+        <h2>I’m Alain.</h2>
+        <p>I’m a photographer and filmmaker based in Erie, Pennsylvania. I like creating images that feel natural, cinematic, and real—not overly staged.</p>
+        <p>My work includes portraits, street photography, creative concepts, and visual storytelling.</p>
+        <a class="text-link" href="#contact">Let’s create something →</a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Have an idea?</h2>
+        <p>For portraits, creative shoots, collaborations, or film projects, send me a message.</p>
+        <a class="button light" href="mailto:alainmarley20@gmail.com">Email me</a>
+        <div class="contact-details">
+          <a href="mailto:alainmarley20@gmail.com">alainmarley20@gmail.com</a>
+          <a href="tel:+18144404655">(814) 440-4655</a>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="TikTok">TikTok</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> Alain Marley. All rights reserved.</p>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Image preview">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img src="" alt="">
+    <p></p>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
